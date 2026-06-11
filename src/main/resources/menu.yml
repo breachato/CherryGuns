@@ -1,0 +1,96 @@
+menu:
+  categorie:
+    titolo: "&d&lArmeria &7- &fSeleziona Categoria"
+    struttura:
+      - "# # # # # # # # #"
+      - "# . . . . . . . #"
+      - "# . . . . . . . #"
+      - "# . . . . . . . #"
+      - "# # # # # # # # #"
+
+  armi:
+    titolo: "&d&lArmeria &7- &f%categoria%"
+    struttura:
+      - "# # # # # # # # #"
+      - "# . . . . . . . #"
+      - "# . . . . . . . #"
+      - "# . . . . . . . #"
+      - "# . . . . . . . #"
+      - "B # # < # > # # #"
+
+categorie:
+  tutte:
+    nome: "&dTutto"
+    icona:
+      materiale: "CHEST"
+      nome: "&d&lTutti gli Oggetti"
+      lore:
+        - "&7Visualizza tutti gli oggetti"
+        - "&7disponibili nell'armeria"
+    filtro: "TUTTE"
+
+  armi:
+    nome: "&cArmi"
+    icona:
+      materiale: "CROSSBOW"
+      nome: "&c&lArmi da Fuoco"
+      lore:
+        - "&7Sfoglia tutte le armi"
+        - "&7da fuoco disponibili"
+    filtro: "ARMI"
+
+  munizioni:
+    nome: "&6Munizioni"
+    icona:
+      materiale: "ARROW"
+      nome: "&6&lMunizioni"
+      lore:
+        - "&7Sfoglia tutti i tipi"
+        - "&7di munizioni"
+    filtro: "MUNIZIONI"
+
+  armature:
+    nome: "&bArmature"
+    icona:
+      materiale: "DIAMOND_CHESTPLATE"
+      nome: "&b&lArmature"
+      lore:
+        - "&7Sfoglia le armature"
+        - "&7e l'equipaggiamento protettivo"
+    filtro: "ARMATURE"
+
+  granate:
+    nome: "&5Granate"
+    icona:
+      materiale: "TNT"
+      nome: "&5&lGranate"
+      lore:
+        - "&7Sfoglia le granate"
+        - "&7esplosive e tattiche"
+    filtro: "GRANATE"
+
+elementi:
+  decoratori:
+    "#":
+      materiale: "BLACK_STAINED_GLASS_PANE"
+      nome: " "
+      lore: []
+
+  indietro:
+    materiale: "BARRIER"
+    nome: "&cTorna alle Categorie"
+    lore:
+      - "&7Torna al menù di"
+      - "&7selezione categorie"
+
+  navigazione:
+    avanti:
+      materiale: "ARROW"
+      nome: "&aPagina Successiva"
+      lore:
+        - "&7Clicca per andare alla pagina successiva"
+    indietro:
+      materiale: "ARROW"
+      nome: "&cPagina Precedente"
+      lore:
+        - "&7Clicca per andare alla pagina precedente"

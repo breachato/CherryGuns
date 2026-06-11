@@ -1,0 +1,96 @@
+main: dev.breach.cherryCore.CherryGuns.CherryGuns
+version: ${project.version}
+api-version: '1.20'
+name: CherryGuns
+description: Plugin privato per il sistema armi ufficiale della Cherry University.
+authors:
+  - visualizzazione
+
+commands:
+  armi:
+    description: Comando principale di Cherry Guns
+    aliases:
+      - cg
+      - cherryguns
+    usage: /armi
+  cherryguns_tp:
+    description: Comando interno di teletrasporto dei log staff
+    usage: /cherryguns_tp <uuid>
+
+permissions:
+  cherryguns.*:
+    description: Accesso completo a Cherry Guns
+    default: op
+    children:
+      cherryguns.admin: true
+      cherryguns.default: true
+      cherryguns.logs: true
+      cherryguns.armi.bypass: true
+
+  cherryguns.admin:
+    description: Accesso ai comandi amministrativi
+    default: op
+    children:
+      cherryguns.reload: true
+      cherryguns.armi.aggiungi: true
+      cherryguns.armi.rimuovi: true
+      cherryguns.armi.cerca: true
+      cherryguns.armi.prendi: true
+      cherryguns.armi.whitelist: true
+      cherryguns.armi.blacklist: true
+
+  cherryguns.default:
+    description: Accesso base alle funzionalità
+    default: true
+    children:
+      cherryguns.usegun: true
+      cherryguns.armi.gui: true
+
+  cherryguns.usegun:
+    description: Permette di usare le armi
+    default: true
+
+  cherryguns.armi.gui:
+    description: Permette di aprire la GUI delle armi
+    default: true
+
+  cherryguns.armi.bypass:
+    description: Bypassa whitelist e blacklist
+    default: op
+
+  cherryguns.armi.prendi:
+    description: Permette di prendere armi
+    default: op
+
+  cherryguns.armi.aggiungi:
+    description: Permette di creare nuove armi
+    default: op
+
+  cherryguns.armi.rimuovi:
+    description: Permette di rimuovere armi
+    default: op
+
+  cherryguns.armi.cerca:
+    description: Permette di cercare armi
+    default: op
+
+  cherryguns.armi.whitelist:
+    description: Permette di gestire la whitelist
+    default: op
+
+  cherryguns.armi.blacklist:
+    description: Permette di gestire la blacklist
+    default: op
+
+  cherryguns.logs:
+    description: Riceve i log staff di spari/morti/taser
+    default: op
+
+  cherryguns.reload:
+    description: Ricarica Cherry Guns
+    default: op
+
+softdepend:
+  - LuckPerms
+  - WorldGuard
+  - ProtocolLib
